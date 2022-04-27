@@ -10,7 +10,7 @@ export default function CarsList() {
         decelerationRate={"normal"}
         showsVerticalScrollIndicator={false}
         snapToInterval={Dimensions.get("screen").height}
-        renderItem={({ item }) => <CarItem car={item} />}
+        renderItem={({ item }) => <CarItem key={item.id} car={item} />}
       />
     </View>
   );
